@@ -40,6 +40,8 @@
 #include <map>
 #include <memory>
 #include <opencv2/core.hpp>
+#include <pcl/point_cloud.h> 
+#include <pcl/point_types.h>
 #include <optional>
 #include <ostream>
 #include <string>

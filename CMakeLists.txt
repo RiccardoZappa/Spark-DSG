@@ -66,8 +66,8 @@ target_include_directories(
   PRIVATE $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include> ${PCL_INCLUDE_DIRS}
 )
 target_link_libraries(
-  ${PROJECT_NAME} PUBLIC Eigen3::Eigen nlohmann_json::nlohmann_json ${OpenCV_LIBS}
-  PRIVATE Threads::Threads ${PCL_LIBRARIES}
+  ${PROJECT_NAME} PUBLIC Eigen3::Eigen nlohmann_json::nlohmann_json ${OpenCV_LIBS} ${PCL_LIBRARIES}
+  PRIVATE Threads::Threads
 )
 
 if(SPARK_DSG_BUILD_ZMQ AND zmq_FOUND)
