@@ -223,6 +223,8 @@ struct ObjectNodeAttributes : public SemanticNodeAttributes {
   //! TEST: whether object is in view frustum or not
   bool is_in_view_frustum;
 
+  pcl::PointCloud<pcl::PointXYZRGB>::Ptr point_cloud;
+
  protected:
   std::ostream& fill_ostream(std::ostream& out) const override;
   void serialization_info() override;
