@@ -227,6 +227,8 @@ struct ObjectNodeAttributes : public SemanticNodeAttributes {
 
   pcl::PointCloud<pcl::PointXYZRGBA>::Ptr point_cloud;
 
+  spark_dsg::Mesh::Ptr mesh;
+
  protected:
   std::ostream& fill_ostream(std::ostream& out) const override;
   void serialization_info() override;
