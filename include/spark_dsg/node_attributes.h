@@ -229,6 +229,8 @@ struct ObjectNodeAttributes : public SemanticNodeAttributes {
 
   spark_dsg::Mesh::Ptr mesh;
 
+  Eigen::Vector3d world_centroid;
+
  protected:
   std::ostream& fill_ostream(std::ostream& out) const override;
   void serialization_info() override;
